@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.clear {
+  background: linear-gradient(200deg, #9ad2ff, #074170);
+}
+
+.sunnny {
+  background: linear-gradient(200deg, #ffd595, #ff7a00);
+}
+
+.icon {
+  width: 3rem;
+}
+
+.search {
+  margin: 2em 0 4em;
+  padding: 2em;
+  display: flex;
+  justify-content: flex-end;
+}
+.search__button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 1em;
+  cursor: pointer;
+}
+.search__input {
+  display: none;
+  background: none;
+  outline: 0;
+  border: 0;
+  border-bottom: 0.15em solid #fff;
+  margin-right: 0.25em;
+  padding: 0.5em 0 0 0.5em;
+  font-size: 1.2rem;
+}
+.search__input::-moz-placeholder {
+  color: #fff;
+}
+.search__input:-ms-input-placeholder {
+  color: #fff;
+}
+.search__input::placeholder {
+  color: #fff;
+}
+.search__input--active {
+  display: block;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__city {
+  font-size: 1.6rem;
+  margin: 0.5em 0;
+}
+
+.time {
+  font-size: 1.2rem;
+}
+
+.weather {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4em 0;
+}
+.weather__temperature p {
+  font-size: 6rem;
+}
+.weather__temperature p sup {
+  font-size: 4rem;
+}
+.weather__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather__description img {
+  margin-right: 1em;
+}
+.weather__description p {
+  font-size: 1.2rem;
+}
+.weather__icon {
+  width: 2.5rem;
+}
+.weather__info-container {
+  display: flex;
+  margin: 4em 0;
+}
+.weather__info-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1em;
+  font-size: 1rem;
+}
+.weather__info-icon {
+  width: 2.25rem;
+  margin-right: 0.25em;
+}
+.weather__info-icon--pressure {
+  width: 2em;
+  margin-right: 0.75em;
+}
+.weather::before {
+  content: "";
+  position: absolute;
+  width: 18rem;
+  height: 1px;
+  background-color: #fff;
+  bottom: -1rem;
+}/*# sourceMappingURL=App.css.map */

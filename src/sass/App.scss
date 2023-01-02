@@ -1,0 +1,210 @@
+@use 'colors' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+}
+
+body {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.clear {
+	background: linear-gradient(200deg, $clear-light, $clear-dark);
+}
+
+.sunny {
+	background: linear-gradient(200deg, $sunny-light, $sunny-dark);
+}
+
+.cloudy {
+	background: linear-gradient(200deg, $cloudy-light, $cloudy-dark);
+}
+
+.night {
+	background: linear-gradient(200deg, $night-light, $night-dark);
+}
+
+// Search
+.search {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 2em 0;
+	padding: 2em;
+
+	&__button {
+		display: flex;
+		align-items: center;
+		background: none;
+		border: none;
+		outline: none;
+		padding: 1.5em;
+		cursor: pointer;
+	}
+
+	&__icon {
+		width: 2rem;
+	}
+
+	&__input {
+		display: none;
+		background: none;
+		outline: 0;
+		border: 0;
+		border-bottom: 0.15em solid $content-color;
+		padding: 0.5em;
+		font-size: 1.2rem;
+		&::placeholder {
+			color: $content-color;
+		}
+
+		&--active {
+			// display: block;
+			display: flex;
+			height: 3.5rem;
+		}
+	}
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__top {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__city {
+		font-size: 1.6rem;
+		margin: 0.5em 0;
+	}
+}
+// time
+
+.time {
+	font-size: 1.2rem;
+}
+
+// weather
+
+.weather {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 4em 0;
+
+	&__temperature {
+		p {
+			font-size: 6rem;
+			sup {
+				font-size: 4rem;
+			}
+		}
+	}
+
+	&__description {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1em;
+		img {
+			margin-right: 1em;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+	}
+
+	&__icon {
+		width: 2.5rem;
+	}
+
+	&__info {
+		&-container {
+			display: flex;
+			margin: 5em 0;
+		}
+		&-element {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 1em;
+			font-size: 1rem;
+		}
+
+		&-icon {
+			width: 2.25rem;
+			margin-right: 0.25em;
+			&--pressure {
+				width: 2em;
+				margin-right: 0.75em;
+			}
+		}
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 18rem;
+		height: 1px;
+		background-color: $content-color;
+		bottom: -1rem;
+	}
+}
+
+.forecast {
+	width: auto;
+	max-width: 30rem;
+	margin: 0 auto;
+	padding: 2em 6em;
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 2em 0;
+		&-icon {
+			width: 3.5em;
+			margin-right: 1em;
+		}
+		&-title {
+			display: flex;
+			align-items: center;
+		}
+		&-info {
+			&--day {
+				font-weight: bold;
+			}
+			p {
+				font-size: 1rem;
+				line-height: 1.25;
+			}
+		}
+		&-temperature {
+			display: flex;
+			span {
+				font-size: 1.4rem;
+			}
+		}
+		sup {
+			font-size: 1rem;
+		}
+	}
+	&__icon {
+		width: 2em;
+		background-color: red;
+	}
+}
