@@ -1,7 +1,7 @@
-# Getting Started with Create React App
+# My first project in React(JavaScript)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
+I used [OpenWeatherAPI](https://openweathermap.org/current). If You want check my project, You must sign in, generate API key and paste it to `api.js` file.
 ## Available Scripts
 
 In the project directory, you can run:
